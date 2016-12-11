@@ -27,21 +27,6 @@ ActiveRecord::Schema.define(version: 20161211115411) do
     t.index ["category_id"], name: "index_articles_on_category_id", using: :btree
   end
 
-  create_table "beers", force: :cascade do |t|
-    t.string   "name"
-    t.string   "style"
-    t.string   "brewery"
-    t.text     "description"
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
-    t.integer  "user_id"
-    t.string   "picture_file_name"
-    t.string   "picture_content_type"
-    t.integer  "picture_file_size"
-    t.datetime "picture_updated_at"
-    t.string   "picture"
-  end
-
   create_table "categories", force: :cascade do |t|
     t.string   "title"
     t.datetime "created_at", null: false
@@ -58,35 +43,6 @@ ActiveRecord::Schema.define(version: 20161211115411) do
     t.datetime "image_updated_at"
     t.integer  "article_id"
     t.index ["article_id"], name: "index_media_on_article_id", using: :btree
-  end
-
-  create_table "pictures", force: :cascade do |t|
-    t.string   "name"
-    t.string   "attachment"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "reviews", force: :cascade do |t|
-    t.integer  "rating"
-    t.text     "message"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer  "beer_id"
-    t.integer  "user_id"
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string   "name"
-    t.string   "email"
-    t.string   "password_digest"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
-    t.string   "avatar_file_name"
-    t.string   "avatar_content_type"
-    t.integer  "avatar_file_size"
-    t.datetime "avatar_updated_at"
-    t.string   "avatar"
   end
 
   add_foreign_key "articles", "categories"
