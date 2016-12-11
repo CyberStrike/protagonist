@@ -20,7 +20,7 @@ Category.create!([{
 },
 {
   title: "Law",
-  colro: '#BA25DC'
+  color: '#BA25DC'
 },
 {
   title: "Sports",
@@ -70,6 +70,9 @@ Article.create!([{
   category_id: "1"
 },
 {
+  media_attributes: [{
+    image: "https://www.rawstory.com/wp-content/uploads/2016/12/messy_truth-410x220.png"
+    }],
   title:   "Watch this female engineer challenge Rick Santorum after he suggests she leave the country",
   body:   "When Rick Santorum came to face to face with a high-achieving female engineer on CNN this week, he told her to leave the country.
 
@@ -89,6 +92,9 @@ CNN commentator Ana Navarro responded with outrage to Santorum's suggestion: \"F
   category_id: "2"
 },
 {
+  media_attributes: [{
+    image: "https://pilbox.themuse.com/?url=https%3A%2F%2Fassets-cf.themuse.com%2Fuploaded%2Fattachments%2F13321.jpeg%3Fv%3DNone&h=367"
+    }],
   title:   "The Cold, Hard Proof That More Women Means Better Business",
   body:   "Really, companies shouldn’t need any convincing about why they should hire more women onto their staffs. The gender gap in American leadership is abysmal, diversity breeds better ideas—you know all of this. But as you also know, executives like seeing the numbers when it comes to their business decisions.
 
@@ -113,6 +119,9 @@ What’s next for the study of women in the workforce? Researchers are hoping to
   category_id: "3"
 },
 {
+  media_attributes: [{
+    image: "http://blogs-images.forbes.com/bonniemarcus/files/2012/12/Hallem_T_863.jpg?width=960"
+    }],
   title:   "Women in Law Need to Advocate for Themselves to Succeed",
   body:   "According to a recent Wall Street Journal article, women now make up about one third of all the nation’s lawyers. In 1970, just 4.9% of lawyers were women and in 2010 that percentage jumped to 33.4. There is progress. However, there is still work to do in terms of creating a level playing field for women in law; one that results in equal partnerships and equal compensation.
 
@@ -155,6 +164,9 @@ You need to be a team player, a person who everyone in the firm knows will alway
   category_id: "4"
 },
 {
+  media_attributes: [{
+    image: "https://static01.nyt.com/images/2016/10/30/arts/30SPORTSWOMAN1/30SPORTSWOMAN1-blog427.jpg"
+    }],
   title:   "Too Good to Be Ignored: Women Who Reached the Top in Sports",
   body:   "When AnnMaria De Mars was growing up in the 1960s and ’70s in Alton, Ill., a \“short, fat little kid with real thick glasses,\” as she described herself, there were few outlets for girls interested in sports. \“Back then, Title IX hadn’t passed, so it was perfectly legal to say, ‘Girls can’t do this,’\” she said. Nonetheless, her mother dropped her off at a local Y.M.C.A., with instructions to find an activity. \“The options were swimming or sprinting,\” Dr. De Mars recalled, and, thanks to one sympathetic instructor, judo.
 

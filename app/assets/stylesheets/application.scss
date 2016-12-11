@@ -69,6 +69,7 @@ $enable-flex: true;
 }
 
 .article-side-image {
-  height: 80px;
-  width: 80px;
+  max-width: 80px;
+  height:80px;
+  width: auto;
 }
