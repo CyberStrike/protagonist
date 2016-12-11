@@ -73,3 +73,13 @@ $enable-flex: true;
   height: 80px;
   width: 80px;
 }
+
+
+// Utitlity
+
+
+.no-hover {
+  &:hover {
+    background-color: transparent;
+  }
+}

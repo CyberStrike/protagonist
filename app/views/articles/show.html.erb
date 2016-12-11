@@ -18,14 +18,30 @@
   <%= link_to 'Back', articles_path %>
 </div>
 
- <footer>
-   <div class="row">
-     <div class="col-xs-3">
-       <img src="http://placehold.it/80x80",
-           class="images media-object rounded-circle">
-     </div>
-      <div class="col-xs-9 articles">
-       <%= link_to @next_article.title, article_path(@next_article) %>
-     </div>
-   </div>
- </footer>
+<footer>
+  <div class="row flex-items-xs-center">
+    <div class="col-xs-6 align">
+      <div class="media no-hover">
+        <div class="media-left media-middle">
+          <%= link_to @next_article do %>
+            <%=
+              image_tag(
+                (@next_article.media.first ? @next_article.media.first.image : "http://placehold.it/80x80"),
+                class: 'media-object rounded-circle article-side-image'
+              )
+            %>
+          <% end %>
+        </div>
+        <div class="media-body">
+          <div class="article-category" style="color: <%= @next_article.category.color %>">
+            <%= @next_article.category.title %>
+          </div>
+          <%= link_to @next_article do %>
+            <h4 class="article-title"><%= @next_article.title %></h4>
+            <!-- <p><% truncate(@next_article.body, length: 300) %></p> -->
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
