@@ -13,6 +13,7 @@
       <h4 class="media-heading"><%= article.title %></h4>
       <p><%= article.body %></p>
       <span><%= link_to 'Show', article %></span>
+      <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
 
     </div>
     </div>
