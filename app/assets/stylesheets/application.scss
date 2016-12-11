@@ -26,7 +26,7 @@ $enable-flex: true;
 
 .article-category {
   margin: 5px 0;
-  font-size: 0.75em;
+  font-size: 1em;
 }
 
 .article-title {
@@ -44,5 +44,8 @@ $enable-flex: true;
     font-weight: 900;
     margin-top: 0;
     margin-bottom: 5px;
+  }
+  .article-category {
+    font-size: 0.75em;
   }
 }
