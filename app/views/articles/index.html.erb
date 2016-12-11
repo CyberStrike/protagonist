@@ -1,25 +1,30 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3"><%= Date.today.strftime("%A, %B %-d, %Y") %></h1>
+  </div>
+</div>
 <div class="container">
+  <p id="notice"><%= notice %></p>
 
-<p id="notice"><%= notice %></p>
-
-    <% @articles.each do |article| %>
-    <div class="media">
-    <div class="media-left media-middle">
-      <a href="#">
-        <img class="media-object rounded-circle" src="http://placehold.it/105x105" alt="Generic placeholder image">
-      </a>
+  <div class="row">
+    <div class="col-xs-11">
+      <% @articles.each do |article| %>
+        <%= link_to article do %>
+          <div class="media">
+            <div class="media-left media-middle">
+              <img class="media-object rounded-circle" src="http://placehold.it/105x105" alt="Generic placeholder image">
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading"><%= article.title %></h4>
+                <p><% truncate(article.body, length: 300) %></p>
+              <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
+            </div>
+          </div>
+        <% end %>
+        <hr>
+      <% end %>
     </div>
-    <div class="media-body">
-      <h4 class="media-heading"><%= article.title %></h4>
-      <p><%= truncate(article.body, length: 300) %></p>
-      <span><%= link_to 'Show', article %></span>
-      <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
-
-    </div>
-    </div>
-    <hr>
-
-    <% end %>
+  </div>
 
 <br>
 
