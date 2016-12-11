@@ -44,6 +44,10 @@ $enable-flex: true;
   font-weight: bold;
 }
 
+.article-author {
+  border-bottom: 5px solid;
+}
+
 .media-body {
   .article-title {
     margin-top: 10px;
@@ -81,7 +85,6 @@ $enable-flex: true;
 
 
 // Utitlity
-
 
 .no-hover {
   &:hover {

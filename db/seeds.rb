@@ -71,7 +71,7 @@ Article.create!([{
 },
 {
   media_attributes: [{
-    image: "https://www.rawstory.com/wp-content/uploads/2016/12/messy_truth-410x220.png"
+    image: "http://www.rawstory.com/wp-content/uploads/2016/12/messy_truth-410x220.png"
     }],
   title:   "Watch this female engineer challenge Rick Santorum after he suggests she leave the country",
   body:   "When Rick Santorum came to face to face with a high-achieving female engineer on CNN this week, he told her to leave the country.
@@ -125,7 +125,7 @@ Studies in 17 different countries in all different industries found that across 
 Overall, the reason why the data matters is simple: More diversity leads to more creative products and teams, which leads to better businesses. Jeanne Hultquist, author of the paper, explains: “[With] more diverse team chemistry, you get more perspectives with a larger variety of options to consider, and more chances of having innovative solutions proposed.” And women are a serious driver of this diversity.
 <br><br>
 What’s next for the study of women in the workforce? Researchers are hoping to zone in on a newer male-dominated industry: startups. And hopefully, the results will be just as encouraging.",
-  url:   "https://www.themuse.com/advice/the-cold-hard-proof-that-more-women-means-better-business",
+  url:   "http://www.themuse.com/advice/the-cold-hard-proof-that-more-women-means-better-business",
   pub:   "12/10/16",
   category_id: "3"
 },
@@ -176,7 +176,7 @@ You need to be a team player, a person who everyone in the firm knows will alway
 },
 {
   media_attributes: [{
-    image: "https://static01.nyt.com/images/2016/10/30/arts/30SPORTSWOMAN1/30SPORTSWOMAN1-blog427.jpg"
+    image: "http://static01.nyt.com/images/2016/10/30/arts/30SPORTSWOMAN1/30SPORTSWOMAN1-blog427.jpg"
     }],
   title:   "Too Good to Be Ignored: Women Who Reached the Top in Sports",
   body:   "When AnnMaria De Mars was growing up in the 1960s and ’70s in Alton, Ill., a \“short, fat little kid with real thick glasses,\” as she described herself, there were few outlets for girls interested in sports. \“Back then, Title IX hadn’t passed, so it was perfectly legal to say, ‘Girls can’t do this,’\” she said. Nonetheless, her mother dropped her off at a local Y.M.C.A., with instructions to find an activity. \“The options were swimming or sprinting,\” Dr. De Mars recalled, and, thanks to one sympathetic instructor, judo.
