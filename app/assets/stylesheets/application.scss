@@ -24,9 +24,25 @@ $enable-flex: true;
   background-position: right;
 }
 
+.article-category {
+  margin: 5px 0;
+  font-size: 0.75em;
+}
+
 .article-title {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   line-height: 1.25;
   font-weight: bold;
+}
+
+.media-body {
+  .article-title {
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
 }
