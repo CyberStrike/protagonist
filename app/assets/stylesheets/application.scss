@@ -34,6 +34,7 @@ $enable-flex: true;
 .article-category {
   margin: 5px 0;
   font-size: 1em;
+  font-weight: 500;
 }
 
 .article-title {
@@ -72,4 +73,14 @@ $enable-flex: true;
   max-width: 80px;
   height:80px;
   width: auto;
+}
+
+
+// Utitlity
+
+
+.no-hover {
+  &:hover {
+    background-color: transparent;
+  }
 }
