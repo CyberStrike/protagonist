@@ -27,11 +27,10 @@
               </div>
               <%= link_to article do %>
                 <h4 class="article-title"><%= article.title %></h4>
-                <!-- <p><% truncate(article.body, length: 300) %></p> -->
+                <div class="hidden-md-down">
+                  <!-- <p><%= truncate(article.body, length: 300) %></p> -->
+                </div>
               <% end %>
-              <div class="col-xs-8">
-                <hr style="color: <%= article.category.color %>">
-              </div>
             </div>
           </div>
         <hr>

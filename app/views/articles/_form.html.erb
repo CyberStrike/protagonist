@@ -35,6 +35,11 @@
     <%= f.date_select :pub %>
   </div>
 
+  <div class="field">
+    <%= f.label :author %>
+    <%= f.text_field :author %>
+  </div>
+
   <%= f.fields_for :media do |ff| %>
     <%= image_tag article.media.first.image %>
     <div>

@@ -11,7 +11,13 @@
       <div class="article-title">
         <%= @article.title %>
       </div>
-      <%= raw @article.body %>
+      <p class="article-author" style="border-color: <%= @article.category.color %>">
+        by <%= @article.author %>
+      </p>
+
+      <div class="article-body">
+        <%= raw(@article.body) %>
+      </div>
     </div>
   </div>
   <%= link_to 'Edit', edit_article_path(@article) %> |
@@ -20,7 +26,7 @@
 
 <footer>
   <div class="row flex-items-xs-center">
-    <div class="col-xs-12 align">
+    <div class="col-xs-12 col-sm-8 col-md-6">
       <div class="media no-hover">
         <div class="media-left media-middle">
           <%= link_to @next_article do %>
@@ -41,7 +47,7 @@
             <!-- <p><% truncate(@next_article.body, length: 300) %></p> -->
             <% end %>
           </div>
-        </div>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
