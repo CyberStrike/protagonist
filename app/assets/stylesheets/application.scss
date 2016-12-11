@@ -16,6 +16,13 @@ $enable-flex: true;
 @import 'bootstrap';
 @import 'articles';
 
+.media {
+  cursor: pointer;
+  &:hover {
+    background-color: #eee;
+  }
+}
+
 .article-header {
   height: 50vh;
   background-size: cover;
@@ -40,6 +47,7 @@ $enable-flex: true;
     margin-top: 10px;
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
+    color: #333;
     font-weight: 900;
     margin-top: 0;
     margin-bottom: 5px;
