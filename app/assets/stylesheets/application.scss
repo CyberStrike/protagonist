@@ -12,9 +12,20 @@
  *
  */
 
+$enable-flex: true;
+
 @import 'bootstrap';
 
 .article-header {
   height: 50vh;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.article-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.25;
+  font-weight: bold;
 }

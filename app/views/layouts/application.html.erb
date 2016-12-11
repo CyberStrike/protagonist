@@ -13,14 +13,19 @@
 
   <body>
 
-    <nav class="navbar navbar-dark navbar-full bg-inverse">
+    <nav class="navbar navbar-full">
       <div class="text-xs-center">
         <a class="navbar-brand" href="#" style="float: none">
-          <%= link_to "PROTAGONIST", root_path %>
+          <h1><%= link_to "PROTAGONIST", root_path %></h1>
         </a>
       </div>
 
     </nav>
+    <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3"><%= Date.today.to_s %></h1>
+  </div>
+</div>
 
     <%= yield %>
 

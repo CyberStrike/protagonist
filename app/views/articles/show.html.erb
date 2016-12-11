@@ -1,19 +1,19 @@
 
-<section class='article-header' style="background-image: url('http://placehold.it/1920/1080')">
+<section class='article-header' style="background-image: url('https://b.fastcompany.net/multisite_files/fastcompany/imagecache/w/1920/h/1080/scale/poster/2016/12/3066274-poster-p-1-the-snoo-baby-sleeper-the-best-crib-most-parents-can-only-dream-about.jpg')">
 </section>
-
+<p id="notice"><%= notice %></p>
 <div class="container">
-
-  <p id="notice"><%= notice %></p>
-
-  <h1><%= @article.title %></h1>
-
-
-  <p>
-  <%= @article.body %>
-  </p>
-
-  <%= @article.title %>
+  <div class="row flex-items-xs-center">
+    <div class="col-xs-11">
+      <div class="article-category lead">
+        <%= @article.category.title %>
+      </div>
+      <div class="article-title">
+        <%= @article.title %>
+      </div>
+      <%= @article.body %>
+    </div>
+  </div>
 
   <%= link_to 'Edit', edit_article_path(@article) %> |
   <%= link_to 'Back', articles_path %>
