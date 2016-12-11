@@ -7,23 +7,31 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Category.create!([{
-  title:  "Technology"
+  title:  "Technology",
+  color: "#FC6C2E"
 },
 {
-  title: "Science"
+  title: "Science",
+  color: '#0920DE'
 },
 {
-  title: "Business"
+  title: "Business",
+  color: '#081EDD'
 },
 {
-  title: "Law"
+  title: "Law",
+  colro: '#BA25DC'
 },
 {
-  title: "Sports"
+  title: "Sports",
+  color: 'tomato'
 }])
 
 
 Article.create!([{
+  media_attributes: [{
+    image: "http://d2kv389z282s26.cloudfront.net/wp-content/blogs.dir/1/files/2016/12/DSC_7961.jpg"
+    }],
   title:   "One woman’s journey to expand AWS kingdom into the public sector | #WomenInTech",
   body: "
   When it comes to the digital transformation, the public sector is not lagging in effort. Innovation and investment in the cloud are strategic initiatives for this market, including government agencies at all levels, non-profit organizations, regulatory associations and education. Amazon Web Services alone serves 2,300 government, 7,000 education and 22,000 nonprofit organizations worldwide.\n <br/>
