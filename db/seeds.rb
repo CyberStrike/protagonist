@@ -7,19 +7,24 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Category.create!([{
-  title:  "Technology"
+  title:  "Technology",
+  color: "#FC6C2E"
 },
 {
-  title: "Science"
+  title: "Science",
+  color: '#0920DE'
 },
 {
-  title: "Business"
+  title: "Business",
+  color: '#081EDD'
 },
 {
-  title: "Law"
+  title: "Law",
+  colro: '#BA25DC'
 },
 {
-  title: "Sports"
+  title: "Sports",
+  color: 'tomato'
 }])
 
 
