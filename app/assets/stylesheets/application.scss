@@ -34,6 +34,7 @@ $enable-flex: true;
 .article-category {
   margin: 5px 0;
   font-size: 1em;
+  font-weight: 500;
 }
 
 .article-title {
@@ -65,9 +66,20 @@ $enable-flex: true;
 
 .header-date {
   font-weight: 200;
+  font-size: 2em;
 }
 
 .article-side-image {
   height: 80px;
   width: 80px;
+}
+
+
+// Utitlity
+
+
+.no-hover {
+  &:hover {
+    background-color: transparent;
+  }
 }

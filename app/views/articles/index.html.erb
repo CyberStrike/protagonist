@@ -1,6 +1,6 @@
 <div class="jumbotron jumbotron-fluid jumbotron-white">
   <div class="container">
-    <h1 class="header-date"><%= Date.today.strftime("%A, %B %-d, %Y") %></h1>
+    <h1 class="header-date text-xs-center"><%= Date.today.strftime("%A, %B %-d, %Y") %></h1>
   </div>
 </div>
 <div class="container">
@@ -22,13 +22,16 @@
               <% end %>
             </div>
             <div class="media-body">
-              <div class="article-category">
+              <div class="article-category" style="color: <%= article.category.color %>">
                 <%= article.category.title %>
               </div>
               <%= link_to article do %>
                 <h4 class="article-title"><%= article.title %></h4>
                 <!-- <p><% truncate(article.body, length: 300) %></p> -->
               <% end %>
+              <div class="col-xs-8">
+                <hr style="color: <%= article.category.color %>">
+              </div>
             </div>
           </div>
         <hr>
