@@ -4,7 +4,7 @@
   <title>Protagonist</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <%= csrf_meta_tags %>
-  <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Roboto", rel:"stylesheet" %>
+  <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Cabin+Sketch|Roboto", rel:"stylesheet" %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <!-- CDN for Hammer.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" >  </script>
@@ -16,8 +16,10 @@
 
   <body>
     <nav class="navbar navbar-full navbar-light text-xs-center">
-      <%= link_to "PROTAGONIST", root_path, class: "navbar-brand", style: "float: none; font-size: 1.5em;
-  font-weight: bold;" %>
+      <%= link_to root_path, class: "navbar-brand", style: "float: none; font-size: 2.5em;
+  font-weight: bold;" do %>
+  <span style="color:#135842;">PRO</span><span style="color:#27B184; font-weight: lighter;">TAGONIST</span>
+  <% end %>
     </nav>
 
   <%= yield %>

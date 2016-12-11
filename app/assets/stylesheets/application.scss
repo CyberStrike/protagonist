@@ -62,11 +62,15 @@ $enable-flex: true;
 
 .jumbotron-white {
   background: white;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
 }
 
 .header-date {
   font-weight: 200;
-  font-size: 2em;
+  font-size: 3em;
+  font-family: 'Cabin Sketch', cursive;
+  color: #135842;
 }
 
 .article-side-image {
