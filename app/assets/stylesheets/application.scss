@@ -33,19 +33,16 @@ $enable-flex: true;
 
 .article-category {
   margin: 5px 0;
-  font-size: 1em;
+  font-size: 2rem;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .article-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1.5rem;
   line-height: 1.25;
   font-weight: bold;
-}
-
-.article-author {
-  border-bottom: 5px solid;
 }
 
 .media-body {
@@ -60,7 +57,7 @@ $enable-flex: true;
   }
 
   .article-category {
-    font-size: 0.75em;
+    font-size: 1.5rem;
   }
 }
 
@@ -85,6 +82,7 @@ $enable-flex: true;
 
 
 // Utitlity
+
 
 .no-hover {
   &:hover {
