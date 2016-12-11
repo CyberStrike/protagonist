@@ -6,6 +6,23 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+categories = Category.create!([{
+  title:  "Technology"
+},
+{
+  title: "Science"
+},
+{
+  title: "Business"
+},
+{
+  title: "Law"
+},
+{
+  title: "Sports"
+}])
+
+
 articles = Article.create!([{
   title:   "A Tech Story",
   body:   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
@@ -40,20 +57,4 @@ articles = Article.create!([{
   url:   "#",
   pub:   "12/10/16",
   category_id: "5"
-}])
-
-categories = Category.create!([{
-  title:  "Technology"
-},
-{
-  title: "Science"
-},
-{
-  title: "Business"
-},
-{
-  title: "Law"
-},
-{
-  title: "Sports"
 }])

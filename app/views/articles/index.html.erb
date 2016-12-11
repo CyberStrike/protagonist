@@ -15,46 +15,30 @@
     </tr>
   </thead> -->
 
-  <tbody>
+
     <% @articles.each do |article| %>
-      <tr>
-        <td><%= article.body %></td>
-        <td><%= article.title %></td>
-        <td><%= article.url %></td>
-        <td><%= article.pub %></td>
-        <td><%= link_to 'Show', article %></td>
-        <td><%= link_to 'Edit', edit_article_path(article) %></td>
-        <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    <div class="media">
+    <div class="media-left media-middle">
+      <a href="#">
+        <img class="media-object" src="..." alt="Generic placeholder image">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading"><%= article.title %></h4>
+      <h3><%= article.pub %></h3>
+      <p><%= article.body %></p>
+      <span><%= link_to 'Show', article %></span>
+
+    </div>
+    </div>
+
     <% end %>
-  </tbody>
-</table>
 
 <br>
 
 
-  <div class="media">
-  <div class="media-left media-middle">
-    <a href="#">
-      <img class="media-object" src="..." alt="Generic placeholder image">
-    </a>
-  </div>
-  <div class="media-body">
-    <h4 class="media-heading">TECH</h4>
-    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-  </div>
-</div>
-<div class="media">
-<div class="media-left media-middle">
-  <a href="#">
-    <img class="media-object" src="..." alt="Generic placeholder image">
-  </a>
-</div>
-<div class="media-body">
-  <h4 class="media-heading">SCIENCE</h4>
-  <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-</div>
-</div>
+
+
 
 <%= link_to 'New Article', new_article_path %>
 </div>
