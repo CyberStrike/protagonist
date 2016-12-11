@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Protagonist</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Roboto", rel:"stylesheet" %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <!-- CDN for Hammer.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" >  </script>
-    <script src="https://use.typekit.net/boz1cjn.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+<head>
+  <title>Protagonist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Roboto", rel:"stylesheet" %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <!-- CDN for Hammer.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" >  </script>
+  <script src="https://use.typekit.net/boz1cjn.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-  </head>
+</head>
 
-  <body>
-    <nav class="navbar navbar-full">
-      <div class="text-xs-center">
-        <a class="navbar-brand" href="#" style="float: none">
-          <h1 ><%= link_to "PROTAGONIST", root_path %></h1>
-        </a>
-      </div>
-    </nav>
+<body>
+  <nav class="navbar navbar-full">
+    <div class="text-xs-center">
+      <a class="navbar-brand" href="#" style="float: none">
+        <h1 ><%= link_to "PROTAGONIST", root_path %></h1>
+      </a>
+    </div>
+  </nav>
 
-      <%= yield %>
+  <%= yield %>
 
-  </body>
+</body>
 </html>

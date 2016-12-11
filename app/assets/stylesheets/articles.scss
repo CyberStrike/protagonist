@@ -2,11 +2,34 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .media-heading {
-    margin-top:10px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
+  margin-top:10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
 }
 
 p {
   font-weight: 100;
+}
+
+footer {
+  position: fixed;
+  height: 100px;
+  bottom: 0;
+  width: 100%;
+  background-color: #f7ff31;
+}
+
+.article-padding-bottom {
+  padding-bottom: 130px;
+}
+
+.navbar-fixed-bottom a{
+  font-family: "Roboto";
+  font-weight: 900;
+  text-align: center;
+  padding-top: 30px;
+  text-decoration: none !important;
+  color: #000;
+  font-weight: 900;
+  font-size: 20;
 }

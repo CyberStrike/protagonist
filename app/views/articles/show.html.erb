@@ -2,7 +2,7 @@
 <section class='article-header' style="background-image: url('https://b.fastcompany.net/multisite_files/fastcompany/imagecache/w/1920/h/1080/scale/poster/2016/12/3066274-poster-p-1-the-snoo-baby-sleeper-the-best-crib-most-parents-can-only-dream-about.jpg')">
 </section>
 <p id="notice"><%= notice %></p>
-<div class="container">
+<div class="container article-padding-bottom">
   <div class="row flex-items-xs-center">
     <div class="col-xs-11">
       <div class="article-category lead">
@@ -11,9 +11,11 @@
       <div class="article-title">
         <%= @article.title %>
       </div>
-      <%= raw @article.body %>
+      <%= raw(@article.body) %>
     </div>
   </div>
+
+ <footer class="navbar-fixed-bottom"> <%= link_to @next_article.title, article_path(@next_article) %> </footer>
 
   <%= link_to 'Edit', edit_article_path(@article) %> |
   <%= link_to 'Back', articles_path %>
