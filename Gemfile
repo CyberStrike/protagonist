@@ -30,6 +30,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'pg'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -37,7 +38,6 @@ group :development, :test do
 end
 
 group :development do
-  gem 'sqlite3'
   gem 'listen', '~> 3.0.5'
   gem 'spring' # Make The App Springy
   gem 'spring-watcher-listen', '~> 2.0.0' # Watch The Springy App
@@ -46,7 +46,6 @@ group :development do
 end
 
 group :production do
-  gem 'pg'
   gem 'rails_12factor'
 end
 

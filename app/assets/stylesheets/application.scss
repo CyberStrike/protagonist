@@ -1,21 +1,28 @@
 /*
-* This is a manifest file that'll be compiled into application.css, which will include all the files
-* listed below.
-*
-* Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
-* or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
-*
-* You're free to add application-wide styles to this file and they'll appear at the bottom of the
-* compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
-* files in this directory. Styles in this file should be added after the last require_* statement.
-* It is generally better to create a new file per style scope.
-*
-*/
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ */
+
 
 $enable-flex: true;
 
 @import 'bootstrap';
 @import 'articles';
+
+.media {
+  cursor: pointer;
+  &:hover {
+    background-color: #eee;
+  }
+}
 
 .article-header {
   height: 50vh;
@@ -24,9 +31,38 @@ $enable-flex: true;
   background-position: right;
 }
 
+.article-category {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
 .article-title {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   line-height: 1.25;
   font-weight: bold;
+}
+
+.media-body {
+  .article-title {
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #333;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .article-category {
+    font-size: 0.75em;
+  }
+}
+
+.jumbotron-white {
+  background: white;
+}
+
+.header-date {
+  font-weight: 200;
 }

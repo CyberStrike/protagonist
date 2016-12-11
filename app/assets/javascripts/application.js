@@ -16,12 +16,9 @@
 //= require_tree .
 
 // Scrolling through articles
-$(document).on('ready', function(){
-  var mc = new Hammer(document.querySelector('body'));
-  mc.on('swipe', function(e){
-    console.log('swipe');
-    // var direction = e.gesture.direction;
-    // $('article-body').attr('class', direction);
-    // $('article-body').replaceWith($('article-body'));
-  });
+$(document).on('turbolinks:load', function(){
+
+  $('.media').on('click', function () {
+    Turbolinks.visit($(this).find('a').prop('href'));
+  })
 })
