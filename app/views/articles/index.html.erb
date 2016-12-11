@@ -6,14 +6,14 @@
     <div class="media">
     <div class="media-left media-middle">
       <a href="#">
-        <img class="media-object" src="..." alt="Generic placeholder image">
+        <img class="media-object rounded-circle" src="http://placehold.it/105x105" alt="Generic placeholder image">
       </a>
     </div>
     <div class="media-body">
       <h4 class="media-heading"><%= article.title %></h4>
-      <h3><%= article.pub %></h3>
       <p><%= article.body %></p>
       <span><%= link_to 'Show', article %></span>
+      <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
 
     </div>
     </div>

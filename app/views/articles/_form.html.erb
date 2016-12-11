@@ -36,6 +36,7 @@
   </div>
 
   <%= f.fields_for :media do |ff| %>
+    <%= image_tag article.media.first.image %>
     <div>
       <%= ff.file_field :image %>
     </div>
