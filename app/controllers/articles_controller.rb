@@ -15,6 +15,7 @@ class ArticlesController < ApplicationController
   # GET /articles/new
   def new
     @article = Article.new
+    @article.media.build()
   end
 
   # GET /articles/1/edit
@@ -69,6 +70,6 @@ class ArticlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
-      params.require(:article).permit(:body, :title, :url, :pub)
+      params.require(:article).permit(:body, :title, :url, :pub, :category_id, :media_attributes)
     end
 end
