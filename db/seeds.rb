@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-categories = Category.create!([{
+Category.create!([{
   title:  "Technology"
 },
 {
@@ -23,7 +23,7 @@ categories = Category.create!([{
 }])
 
 
-articles = Article.create!([{
+Article.create!([{
   title:   "One woman’s journey to expand AWS kingdom into the public sector | #WomenInTech",
   body: "
   When it comes to the digital transformation, the public sector is not lagging in effort. Innovation and investment in the cloud are strategic initiatives for this market, including government agencies at all levels, non-profit organizations, regulatory associations and education. Amazon Web Services alone serves 2,300 government, 7,000 education and 22,000 nonprofit organizations worldwide.
