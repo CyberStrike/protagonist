@@ -26,7 +26,7 @@ categories = Category.create!([{
 articles = Article.create!([{
   title:   "One woman’s journey to expand AWS kingdom into the public sector | #WomenInTech",
   body: "
-  When it comes to the digital transformation, the public sector is not lagging in effort. Innovation and investment in the cloud are strategic initiatives for this market, including government agencies at all levels, non-profit organizations, regulatory associations and education. Amazon Web Services alone serves 2,300 government, 7,000 education and 22,000 nonprofit organizations worldwide.
+  When it comes to the digital transformation, the public sector is not lagging in effort. Innovation and investment in the cloud are strategic initiatives for this market, including government agencies at all levels, non-profit organizations, regulatory associations and education. Amazon Web Services alone serves 2,300 government, 7,000 education and 22,000 nonprofit organizations worldwide.\n <br/>
 
   Boasting clients such as the Department of Defense, the Department of Justice and the Central Intelligence Agency, AWS is not only aiding government with its mandate to move to the cloud, but the cloud provider is facilitating innovation for the public good. Additionally, organizations such as the Financial Industry Regulatory Association (FINRA) have improved system performance by a reported 400 percent using AWS cloud, and the American Heart Association is collaborating with the cloud provider to advance heart disease research.
 
