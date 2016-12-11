@@ -14,10 +14,18 @@
       <%= raw(@article.body) %>
     </div>
   </div>
-
- <footer class="navbar-fixed-bottom"> <%= link_to @next_article.title, article_path(@next_article) %> </footer>
-
   <%= link_to 'Edit', edit_article_path(@article) %> |
   <%= link_to 'Back', articles_path %>
-
 </div>
+
+ <footer>
+   <div class="row">
+     <div class="col-xs-3">
+       <img src="http://placehold.it/80x80",
+           class="images media-object rounded-circle">
+     </div>
+      <div class="col-xs-9 articles">
+       <%= link_to @next_article.title, article_path(@next_article) %>
+     </div>
+   </div>
+ </footer>
