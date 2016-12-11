@@ -47,17 +47,15 @@ $enable-flex: true;
 
 .media-body {
   .article-title {
-    margin-top: 10px;
     font-family: 'Roboto', sans-serif;
-    font-size: 1em;
+    font-size: .75rem;
     color: #333;
     font-weight: 900;
-    margin-top: 0;
     margin-bottom: 5px;
   }
 
   .article-category {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
