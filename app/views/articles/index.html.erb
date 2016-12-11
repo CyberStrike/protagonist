@@ -11,7 +11,7 @@
     </div>
     <div class="media-body">
       <h4 class="media-heading"><%= article.title %></h4>
-      <p><%= truncate(article.body, length: 200) %></p>
+      <p><%= truncate(article.body, length: 300) %></p>
       <span><%= link_to 'Show', article %></span>
       <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
 
