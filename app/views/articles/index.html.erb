@@ -9,35 +9,35 @@
   <div class="row">
     <div class="col-xs-11">
       <% @articles.each do |article| %>
-          <div class="media">
-            <div class="media-left media-middle">
-              <%= link_to article do %>
-                <%=
-                  image_tag(
-                    (article.media.first ? article.media.first.image : "http://placehold.it/80x80"),
-                    class: 'media-object rounded-circle article-side-image'
-                  )
-                %>
-              <% end %>
+      <div class="media">
+        <div class="media-left media-middle">
+          <%= link_to article do %>
+          <%=
+          image_tag(
+          (article.media.first ? article.media.first.image : "http://placehold.it/80x80"),
+          class: 'media-object rounded-circle article-side-image'
+            )
+            %>
+            <% end %>
+          </div>
+          <div class="media-body">
+            <div class="article-category" style="color: <%= article.category.color %>">
+              <%= article.category.title %>
             </div>
-            <div class="media-body">
-              <div class="article-category" style="color: <%= article.category.color %>">
-                <%= article.category.title %>
-              </div>
-              <%= link_to article do %>
-                <h4 class="article-title"><%= article.title %></h4>
-                <div class="hidden-md-down">
-                  <!-- <p><%= truncate(article.body, length: 300) %></p> -->
-                </div>
-              <% end %>
+            <%= link_to article do %>
+            <h4 class="article-title"><%= article.title %></h4>
+            <div class="hidden-md-down">
+              <!-- <p><%= truncate(article.body, length: 300) %></p> -->
+            </div>
+            <% end %>
 
-              <div class="col-xs-8">
-                <!-- <hr style="color: <%= article.category.color %>"> -->
-              </div>
+            <div class="col-xs-8">
+              <!-- <hr style="color: <%= article.category.color %>"> -->
             </div>
           </div>
+        </div>
         <hr>
-      <% end %>
+        <% end %>
+      </div>
     </div>
   </div>
-</div>
