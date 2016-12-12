@@ -1,24 +1,11 @@
-# README
+# PROTAGONIST
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**PROTAGONIST** is a mobile-first web app designed to highlight the accomplishments and positive news stories of successful female role models in:
 
-Things you may want to cover:
+* Technology
+* Science
+* Business
+* Law 
+* Sports
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This media stream is a curation of news from various sources updated daily, and categorized by different industries. Our goal is to inspire young women to pursue careers in which they are under-represented.
